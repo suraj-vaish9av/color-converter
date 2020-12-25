@@ -1,0 +1,3 @@
+include ':ColorConverter'
+include ':app'
+rootProject.name = "ColorConverterSample"

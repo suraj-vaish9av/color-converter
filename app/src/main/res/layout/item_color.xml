@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+    <data>
+        <variable
+            name="color"
+            type="com.colorconverter.database.Color" />
+        <variable
+            name="colorClickListener"
+            type="com.colorconvertersample.ColorClickListener" />
+    </data>
+    <View android:layout_width="match_parent"
+        android:id="@+id/viewColor"
+        android:onClick="@{()->colorClickListener.onItemClicked(color)}"
+        android:layout_marginStart="5dp"
+        android:layout_marginEnd="5dp"
+        android:layout_marginBottom="5dp"
+        android:layout_marginTop="5dp"
+        android:layout_height="50dp"
+        android:gravity="center"
+        android:textSize="25sp"
+        colorize="@{color}"
+        xmlns:android="http://schemas.android.com/apk/res/android" />
+</layout>
