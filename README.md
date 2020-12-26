@@ -71,6 +71,15 @@ returns LiveData of random colors of the given size
 Now the ```Color``` is a class that contains: ```id, colorName, hexCode```.
 Use these methods wherever that suits you or your project.
 
+For quick reference, check this table: 
+
+| Method  | Caching | Coroutines | Description |
+| ------------- | ------------- | ------------- | ------------- |
+| ```String.toColorName()```  | Yes, If applied  | Yes  | Accepts a hex-code and returns color name.  |
+| ```String.toHex()```  | Yes, If applied  | Yes  | Accepts color name and returns hex-code.  |
+| ```getRandomColor()```  | No  | Yes  | Returns only one random color.  |
+| ```getRandomColors(size:Int)```  | No  | Using, internally  | Returns random colors of the given size.  |
+
 
 # Sample App
 
@@ -79,9 +88,4 @@ In the sample app, Inspired by the artwork of [Piet Mondrian](https://en.wikiped
 <img src="https://github.com/suraj-vaish9av/color-converter/blob/main/img/color-converter.gif" width="30%" />
 
 
-| Method  | Caching | Coroutines | Description |
-| ------------- | ------------- | ------------- | ------------- |
-| ```String.toColorName()```  | Yes, If applied  | Yes  | Accepts a hex-code and returns color name.  |
-| ```String.toHex()```  | Yes, If applied  | Yes  | Accepts color name and returns hex-code.  |
-| ```getRandomColor()```  | No  | Yes  | Returns only one random color.  |
-| ```getRandomColors(size:Int)```  | No  | Using, internally  | Returns random colors of the given size.  |
+
