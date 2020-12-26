@@ -7,7 +7,7 @@ color converter has a list of 18K+ colors, which lets you convert the color name
 
 
 # Download
-Step 1. Add the JitPack repository to your build file
+Step 1. Add the JitPack repository to your build file,
 Add it in your root build.gradle at the end of repositories:
 ```
 	allprojects {
@@ -36,11 +36,11 @@ OR
 ```
 ColorConverter.configure(applicationContext,50)
 ```
-Here the second parameter is cacheSize, which will keep the last 50(in this example, you can set it according to your need) accessed color in memory so that it can later be accessed.
+Here the second parameter is cacheSize, which will keep the last 50(in this example, you can set it as per your need) accessed color in memory so that it can be used for future method calls.
 
 <h3>How to convert, color name to hex and vice-versa?</h3>
 
-If you have the name of color and what to get the hex code:
+If you have the color name and want to get the hex code:
 
 ```
 val hexCode = "Alabaster".toHex()     // will return #f3e7db
@@ -53,7 +53,7 @@ val colorName = "#f3e7db".toColorName() // will return Alabaster
 ```
 
 that's it, but wait a minute what if you neither have the color name nor the color code, will this library be useful for you?
-Yes, there are two methods for this:
+Yes, there are two methods which can be used to retrieve random color(s):
 
 ```
 suspend fun getRandomColor(): Color?  // returns only one random color
@@ -65,7 +65,6 @@ fun getRandomColors(size:Int): LiveData<List<Color>> // returns LiveData of rand
 ```
 
 Here, ```Color``` is a class that contains: ```id, colorName, hexCode```.
-Use these methods wherever that suits you or your project.
 
 For quick reference, check this table: 
 
@@ -79,7 +78,7 @@ For quick reference, check this table:
 
 # Sample App
 
-In the sample app, Inspired by the artwork of [Piet Mondrian](https://en.wikipedia.org/wiki/Piet_Mondrian): [Tableau I](https://www.google.com/search?tbm=isch&q=tableau%20i%20by%20piet%20mondrian), I have created an activity with some random colors that looks like this:
+In the sample app, I have created an activity with some random colors (check ss) which is inspired by the artwork of [Piet Mondrian](https://en.wikipedia.org/wiki/Piet_Mondrian): [Tableau I](https://www.google.com/search?tbm=isch&q=tableau%20i%20by%20piet%20mondrian).
 
 <img src="https://github.com/suraj-vaish9av/color-converter/blob/main/img/color-converter.gif" width="30%" />
 
