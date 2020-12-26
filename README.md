@@ -8,7 +8,7 @@ color converter has a list of 18K+ colors, which lets you convert the color name
 
 # Download
 Step 1. Add the JitPack repository to your build file,
-Add it in your root build.gradle at the end of repositories:
+add it in your root build.gradle at the end of repositories:
 ```
 	allprojects {
 		repositories {
