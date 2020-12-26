@@ -36,7 +36,21 @@ OR
 ```
 ColorConverter.configure(applicationContext,50)
 ```
-Here the second parameter is colorCache size, will keep last 50(in this example, you can set it according to your need) accessed color in memory so that can later accessed fastly.
+Here the second parameter is colorCache size, will keep last 50(in this example, you can set it according to your need) accessed color in memory so that it can later accessed fastly.
+
+Now the key part:
+
+If you have the name of color and what to get the hex code, just do this:
+
+```
+val hexCode = "Alabaster".toHex()     // will return #f3e7db
+```
+
+If you have the hex code and want to get the color name, do this:
+
+```
+val colorName = "#f3e7db".toColorName() // will return Alabaster
+```
 
 
 
