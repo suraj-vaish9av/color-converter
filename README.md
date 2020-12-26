@@ -73,4 +73,4 @@ Use these methods whereever that suits you or your project.
 
 In the sample app, By inspring the artwork of Piet Mondrian: Tableau I , I have created an screen which look like this:
 
-   
+![Inspired by Tableau I by Piet Mondrian](https://github.com/suraj-vaish9av/color-converter/blob/main/img/color-converter.gif)
