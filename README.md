@@ -74,7 +74,7 @@ Use these methods wherever that suits you or your project.
 
 # Sample App
 
-In the sample app, Inspired by the artwork of [Piet Mondrian](https://en.wikipedia.org/wiki/Piet_Mondrian): Tableau I, I have created an activity with some random colors that looks like this:
+In the sample app, Inspired by the artwork of [Piet Mondrian](https://en.wikipedia.org/wiki/Piet_Mondrian): [Tableau I](https://www.google.com/search?tbm=isch&q=tableau%20i%20by%20piet%20mondrian), I have created an activity with some random colors that looks like this:
 
 <img src="https://github.com/suraj-vaish9av/color-converter/blob/main/img/color-converter.gif" width="30%" />
 
