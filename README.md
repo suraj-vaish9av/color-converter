@@ -56,19 +56,15 @@ that's it, but wait a minute what if you neither have the color name nor the col
 Yes, there are two methods for this:
 
 ```
-suspend fun getRandomColor(): Color?
+suspend fun getRandomColor(): Color?  // returns only one random color
 ```
-returns only one random color
-
-and 
+and, 
 
 ```
-fun getRandomColors(size:Int): LiveData<List<Color>>
+fun getRandomColors(size:Int): LiveData<List<Color>> // returns LiveData of random colors of the given size
 ```
-returns LiveData of random colors of the given size
 
-
-Now the ```Color``` is a class that contains: ```id, colorName, hexCode```.
+Here, ```Color``` is a class that contains: ```id, colorName, hexCode```.
 Use these methods wherever that suits you or your project.
 
 For quick reference, check this table: 
