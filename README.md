@@ -52,8 +52,8 @@ If you have the hex code and want to get the color name:
 val colorName = "#f3e7db".toColorName() // will return Alabaster
 ```
 
-that's it, but wait a minute what if you neither have the color name nor the color code, will this library be useful for you?
-Yes, there are two methods which can be used to retrieve random color(s):
+That's it, but wait a minute, what if you neither have the color name nor the color code, will this library be useful for you?
+Yes, we have these methods to retrieve random color(s):
 
 ```
 suspend fun getRandomColor(): Color?  // returns only one random color
