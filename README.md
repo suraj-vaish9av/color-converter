@@ -52,6 +52,25 @@ If you have the hex code and want to get the color name, do this:
 val colorName = "#f3e7db".toColorName() // will return Alabaster
 ```
 
+that's it, but wait a minute what if you neither have the color name nor the color code, will this library be useful for you?
+Yes, there is two methods for this:
+
+```
+suspend fun getRandomColor(): Color?
+```
+returns only one random color
+
+and 
+
+```
+fun getRandomColors(size:Int): LiveData<List<Color>>
+```
+returns livedata of random colors of the given size
 
 
- 
+Now the ```Color``` is a class that contains: ```id, colorName, hexCode```.
+Use these methods whereever that suits you or your project.
+
+In the sample app, By inspring the artwork of Piet Mondrian: Tableau I , I have created an screen which look like this:
+
+   
