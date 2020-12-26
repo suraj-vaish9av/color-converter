@@ -3,7 +3,7 @@
 [![](https://jitpack.io/v/suraj-vaish9av/color-converter.svg)](https://jitpack.io/#suraj-vaish9av/color-converter)
 
 
-color converter has a list of 18K colors, which lets you convert the color name to hex and vice-versa.
+color converter has a list of 18K+ colors, which lets you convert the color name to hex and vice-versa.
 
 
 # Download
@@ -26,7 +26,7 @@ Step 2. Add the dependency
 ```
   
 # How to use it?
-In your application class's onCreate method, add this:
+In your Application's onCreate method, add this:
 ```
 ColorConverter.configure(applicationContext)  
 ```
@@ -36,17 +36,17 @@ OR
 ```
 ColorConverter.configure(applicationContext,50)
 ```
-Here the second parameter is colorCache size, which will keep the last 50(in this example, you can set it according to your need) accessed color in memory so that it can later be accessed fastly.
+Here the second parameter is cacheSize, which will keep the last 50(in this example, you can set it according to your need) accessed color in memory so that it can later be accessed.
 
-Now the key part:
+How to convert, color name to hex and vice-versa?
 
-If you have the name of color and what to get the hex code, just do this:
+If you have the name of color and what to get the hex code:
 
 ```
 val hexCode = "Alabaster".toHex()     // will return #f3e7db
 ```
 
-If you have the hex code and want to get the color name, do this:
+If you have the hex code and want to get the color name:
 
 ```
 val colorName = "#f3e7db".toColorName() // will return Alabaster
@@ -71,6 +71,6 @@ returns LiveData of random colors of the given size
 Now the ```Color``` is a class that contains: ```id, colorName, hexCode```.
 Use these methods wherever that suits you or your project.
 
-In the sample app, By inspiring the artwork of Piet Mondrian: Tableau I, I have created a screen that looks like this:
+In the sample app, Inspired by the artwork of Piet Mondrian: Tableau I, I have created an activity with some random colors that looks like this:
 
 ![Inspired by Tableau I by Piet Mondrian](https://github.com/suraj-vaish9av/color-converter/blob/main/img/color-converter.gif)
