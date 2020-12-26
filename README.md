@@ -38,7 +38,7 @@ ColorConverter.configure(applicationContext,50)
 ```
 Here the second parameter is cacheSize, which will keep the last 50(in this example, you can set it according to your need) accessed color in memory so that it can later be accessed.
 
-How to convert, color name to hex and vice-versa?
+<h3>How to convert, color name to hex and vice-versa?</h3>
 
 If you have the name of color and what to get the hex code:
 
