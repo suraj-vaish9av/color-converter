@@ -1,3 +1,5 @@
+@file:Suppress("unused")
+
 package com.colorconvertersample
 
 import android.graphics.Color.parseColor

@@ -9,6 +9,7 @@ import com.google.gson.annotations.SerializedName
 @Entity(tableName = COLOR_TABLE_NAME)
 class Color {
 
+    @Suppress("unused")
     @PrimaryKey(autoGenerate = true)
     @ColumnInfo(name = ID)
     var id:Long = 0

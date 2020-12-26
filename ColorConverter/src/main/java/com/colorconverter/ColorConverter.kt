@@ -1,3 +1,5 @@
+@file:Suppress("MemberVisibilityCanBePrivate")
+
 package com.colorconverter
 
 import android.content.Context
@@ -10,7 +12,7 @@ var colorCache : ColorCache?= null
 
 object ColorConverter {
 
-    const val DEFAULT_COLOR_CACHE_SIZE = 50
+    private const val DEFAULT_COLOR_CACHE_SIZE = 50
 
     const val NO_CACHING = 0
 
