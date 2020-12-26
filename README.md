@@ -73,8 +73,7 @@ Use these methods wherever that suits you or your project.
 
 In the sample app, Inspired by the artwork of Piet Mondrian: Tableau I, I have created an activity with some random colors that looks like this:
 
-![Inspired by Tableau I by Piet Mondrian](https://github.com/suraj-vaish9av/color-converter/blob/main/img/color-converter.gif)
-
+<img src="https://github.com/suraj-vaish9av/color-converter/blob/main/img/color-converter.gif" width="30%" />
 
 
 | Method  | Caching | Coroutines | Description |
