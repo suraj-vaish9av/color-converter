@@ -71,6 +71,9 @@ returns LiveData of random colors of the given size
 Now the ```Color``` is a class that contains: ```id, colorName, hexCode```.
 Use these methods wherever that suits you or your project.
 
+
+#Sample App
+
 In the sample app, Inspired by the artwork of Piet Mondrian: Tableau I, I have created an activity with some random colors that looks like this:
 
 <img src="https://github.com/suraj-vaish9av/color-converter/blob/main/img/color-converter.gif" width="30%" />
